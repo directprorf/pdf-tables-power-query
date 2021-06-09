@@ -4,7 +4,7 @@
 Pdf.Tables( pdf, optional [conditions] )
 
 **Аргументы:**  
-* pdf - файл pdf в формате файла, может быть получен функцией File.Contents;  
+* pdf - файл pdf в формате binary, может быть получен функцией File.Contents;  
 * [conditions] - строка дополнительных свойств (необязательный параметр).
 
 
