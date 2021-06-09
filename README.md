@@ -14,21 +14,19 @@ Pdf.Tables( pdf, optional [conditions] )
 ## Примеры в коде
 ```
 let  
-    letters = {"a","б","в","г"},          // Задаём список из букв
-    one = "Б",                            // Задаём букву для поиска в списке
-    result = List.Contains(letters, one)  // Проверяем наличие буквы в списке
+    pdf_file = File.Contents("c:/files/file.pdf"), // Получаем PDF-файл
+    result = Pdf.Tables(pdf_file)                  // Забираем данные из PDF-файла
 in 
-    result                                // Выдаёт FALSE так как большая буква Б не содержится в списке.
+    result                                         // На выходе получаем таблицу со содержимым таблиц из PDF
 ```
 
 
 ```
 let  
-    letters = {"a","б","в","г"},                                      // Задаём список из букв
-    one = "Б",                                                        // Задаём букву для поиска в списке
-    result = List.Contains(letters, one, Comparer.OrdinalIgnoreCase)  // Проверяем наличие буквы в списке
+    pdf_file = File.Contents("c:/files/file.pdf"), // Получаем PDF-файл
+    result = Pdf.Tables(pdf_file)                  // Забираем данные из PDF-файла
 in 
-    result                                                            //Выдаёт TRUE так как при сравнении игнорируется регистр.
+    result                                         // На выходе получаем таблицу со содержимым таблиц из PDF
 ```
 
 ## 12 видео для новичков по Power Query: [ССЫЛКА](https://www.youtube.com/playlist?list=PL3du-Tm1nAm6SSQOCpryquOx-6aasPARM)
