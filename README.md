@@ -23,10 +23,11 @@ in
 
 ```
 let  
-    pdf_file = File.Contents("c:/files/file.pdf"), // Получаем PDF-файл
-    result = Pdf.Tables(pdf_file)                  // Забираем данные из PDF-файла
+    pdf_file = File.Contents("c:/files/file.pdf"),                                                     // Получаем PDF-файл
+    result = Pdf.Tables(pdf_file, 
+    [Implementation="1.2",StartPage=4 ,EndPage =5, MultiPageTables =false, EnforceBorderLines = true]) // Забираем данные из PDF-файла
 in 
-    result                                         // Получаем таблицу с содержимым таблиц из PDF
+    result                                                                                             // Получаем таблицу с содержимым таблиц из PDF
 ```
 
 ## 12 видео для новичков по Power Query: [ССЫЛКА](https://www.youtube.com/playlist?list=PL3du-Tm1nAm6SSQOCpryquOx-6aasPARM)
