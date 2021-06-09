@@ -1,10 +1,10 @@
 # Функция Pdf.Tables в Power Query
 
 ## Написание функции
-Pdf.Tables( pdf, [optional conditions] )
+Pdf.Tables( pdf, optional [conditions] )
 
 **Аргументы:**  
-* pdf - список значений в формате списка,  
+* pdf - файл pdf в формате файла, может быть получен функцией File.Contents;  
 * [conditions] - строка дополнительных свойств (необязательный параметр).
 
 
