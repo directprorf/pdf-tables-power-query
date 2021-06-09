@@ -1,7 +1,7 @@
 # Функция Pdf.Tables в Power Query
 
 ## Написание функции
-Pdf.Tables( list, value, optional criteria )
+Pdf.Tables( pdf, [optional conditions] )
 
 **Аргументы:**  
 * list - список значений в формате списка,  
